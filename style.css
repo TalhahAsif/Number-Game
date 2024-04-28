@@ -1,165 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #020122; */
-    /* color: #E1F2FE; */
-    /* color: #020122; */
-    /* color: #87FF65; */
-    font-family: poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #020122; */
+  /* color: #E1F2FE; */
+  /* color: #020122; */
+  /* color: #87FF65; */
+  font-family: poppins;
+}
+body {
+  text-align: center;
+  background-color: #eaf0ce;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+.note{
+  font-size: 1em;
+  margin-top: 20px;
+  color: #393a0e;
+}
+.main-Head {
+  margin-bottom: 80px;
+  font-size: 50px;
+  text-align: center;
+  color: #393a10;
+  font-family: Playfair Display;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70%;
+  margin: 100px;
+  /* background-color: #eaf0ce; */
+  /* width: 100%; */
+}
+.userBox {
+  display: flex;
+  /* align-items: start; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin-right: 50px; */
+}
+.numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 100%;
+}
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: #d2ff28;
+  color: #393a10;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.number:hover {
+  background-color: #9ec902;
+  color: #393a0e;
+  border: none;
+  cursor: pointer;
+}
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid; */
+  height: 100%;
+  /* width: 40%; */
+  margin: 0px 50px;
+}
+.userNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 130px;
+  width: 115px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #393a10;
+  color: #d2ff28;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.un-head {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.randomNumber {
+  height: 130px;
+  width: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #393a10;
+  color: #d2ff28;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+}
+.rn-head {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.chances {
+  color: #393a10;
+}
+.mainResult {
+  text-align: center;
+}
+.info {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #307351;
+  /* background-color: #eaf0ce; */
+}
+.ResultInfoPositive {
+  color: #307351;
+  font-size: 40px;
+  display: none;
+}
+.ResultInfoNegative {
+  color: red;
+  font-size: 40px;
+  display: none;
+}
+.resultNumbers {
+  color: #fffb00;
+  font-size: 35px;
+}
+.unhidden {
+  display: block;
+  font-size: 20px;
+}
+.hidden {
+  display: none;
+}
+.wins{
+  color: #393a10;
+}
+
+@media only screen and (max-width: 1050px) {
+  .resultBox {
+    flex-direction: row-reverse;
+    margin: 20px 0;
   }
-  .main-container {
-    background-color: #eaf0ce;
-    /* text-align: center;
-      margin-top: 80px; */
-    /* height: 150vh; */
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+}
+@media only screen and (max-width: 1049px) {
+  .container {
+    margin-top: 29px;
   }
   .main-Head {
-    margin-bottom: 80px;
-    font-size: 50px;
-    text-align: center;
-    color: #393a10;
-    font-family: Playfair Display;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 70%;
-    margin: 150px;
-    /* background-color: #eaf0ce; */
-    /* width: 100%; */
-  }
-  .userBox {
-    display: flex;
-    /* align-items: start; */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* margin-right: 50px; */
-  }
-  .numbers {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 50%;
-    width: 100%;
-  }
-  .number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid;
-    padding: 5px;
-    margin: 5px;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    font-size: 30px;
-    border-radius: 10px;
-    background-color: #d2ff28;
-    color: #393a10;
-  }
-  .number:hover {
-    background-color: #9ec902;
-    color: #393a0e;
-    border: none;
-    cursor: pointer;
-  }
-  .resultBox {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* border: 1px solid; */
-    height: 100%;
-    /* width: 40%; */
-    margin: 0px 50px;
-  }
-  .userNumber {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 130px;
-    width: 115px;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #393a10;
-    color: #d2ff28;
-  }
-  .un-head {
-    margin: 10px;
-  }
-  .randomNumber {
-    height: 130px;
-    width: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #393a10;
-    color: #d2ff28;
-  }
-  .rn-head {
-    margin: 10px;
-  }
-  .chances{
-    color: #393a10;
-  }
-  .mainResult {
-    text-align: center;
+    margin-bottom: 40px;
   }
   .info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    color: #307351;
-    /* background-color: #eaf0ce; */
+    margin: 0;
   }
-  .ResultInfoPositive{
-      color: #307351;
-      font-size: 40px;
-       display: none;
+  .unhidden {
+    margin: 10px 0;
   }
-  .ResultInfoNegative{
-    color: red;
-    font-size: 40px;
-    display: none;
-  }
-  .resultNumbers{
-    color: #fffb00;
-    font-size: 50px;
-  }
-  .unhidden{
-    display: block;
-    font-size: 40px;
-  }
-  .hidden{
-    display: none;
-  }
-
-  @media only screen and (max-width: 1056px){
-    .resultBox {
-      flex-direction: row-reverse;
-      margin: 50px 0;
-    }
-    .container {
-      margin:70px;
-    }
-
 }
