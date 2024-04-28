@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="container">
+            <div class="userBox">
+                <h1 class="main-Head">Number Game</h1>
+                <div class="numbers">
+                    <div class="number" onclick="randomNumber(1)">1</div>
+                    <div class="number" onclick="randomNumber(2)">2</div>
+                    <div class="number" onclick="randomNumber(3)">3</div>
+                    <div class="number" onclick="randomNumber(4)">4</div>
+                    <div class="number" onclick="randomNumber(5)">5</div>
+                    <div class="number" onclick="randomNumber(6)">6</div>
+                </div>
+            </div>
+            <div class="resultBox">
+                <div class="userNumber">
+                    <h3 class="un-head">User Number</h3>
+                    <h4 id="userNO" class="resultNumbers">-</h4>
+                </div>
+                <div class="randomNumber">
+                    <div>
+                        <h3 class="rn-head">Random Number</h3>
+                        <h4 id="randomNo" class="resultNumbers">-</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="chances">
+                    <h3>Remaining Chances: </h3>
+                    <h3 id="chancesNum">-</h3>
+                </div>
+                <div class="wins">
+                    <h3>Wins: </h3>
+                    <h3 id="WinsNum">-</h3>
+                </div>
+                <div>
+                    <h3 class="ResultInfoPositive" id="ResultInfoPositiveId">Congratulation You Won!!</h4>
+                </div>
+                <div>
+                    <h3 class="ResultInfoNegative" id="ResultInfoNegativeId">Sorry Try later!!</h4>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

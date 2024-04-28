@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #020122; */
+    /* color: #E1F2FE; */
+    /* color: #020122; */
+    /* color: #87FF65; */
+    font-family: poppins;
+  }
+  .main-container {
+    background-color: #eaf0ce;
+    /* text-align: center;
+      margin-top: 80px; */
+    /* height: 150vh; */
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .main-Head {
+    margin-bottom: 80px;
+    font-size: 50px;
+    text-align: center;
+    color: #393a10;
+    font-family: Playfair Display;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+    margin: 150px;
+    /* background-color: #eaf0ce; */
+    /* width: 100%; */
+  }
+  .userBox {
+    display: flex;
+    /* align-items: start; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 50px; */
+  }
+  .numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+  }
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 5px;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #d2ff28;
+    color: #393a10;
+  }
+  .number:hover {
+    background-color: #9ec902;
+    color: #393a0e;
+    border: none;
+    cursor: pointer;
+  }
+  .resultBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid; */
+    height: 100%;
+    /* width: 40%; */
+    margin: 0px 50px;
+  }
+  .userNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    width: 115px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #393a10;
+    color: #d2ff28;
+  }
+  .un-head {
+    margin: 10px;
+  }
+  .randomNumber {
+    height: 130px;
+    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #393a10;
+    color: #d2ff28;
+  }
+  .rn-head {
+    margin: 10px;
+  }
+  .chances{
+    color: #393a10;
+  }
+  .mainResult {
+    text-align: center;
+  }
+  .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: #307351;
+    /* background-color: #eaf0ce; */
+  }
+  .ResultInfoPositive{
+      color: #307351;
+      font-size: 40px;
+       display: none;
+  }
+  .ResultInfoNegative{
+    color: red;
+    font-size: 40px;
+    display: none;
+  }
+  .resultNumbers{
+    color: #fffb00;
+    font-size: 50px;
+  }
+  .unhidden{
+    display: block;
+    font-size: 40px;
+  }
+  .hidden{
+    display: none;
+  }
+
+  @media only screen and (max-width: 1056px){
+    .resultBox {
+      flex-direction: row-reverse;
+      margin: 50px 0;
+    }
+    .container {
+      margin:70px;
+    }
+
+}
