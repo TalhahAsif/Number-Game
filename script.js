@@ -32,7 +32,7 @@ function randomNumber(userNumber) {
     ResultInfoPositive.className = "unhidden";
     chances = 10;
     wins = 3;
-  } else if (chances == 0 || chances < wins) {
+  } else if (chances < wins) {
     ResultInfoNegative.className = "unhidden";
     ResultInfoNegative.style.color = "red";
     chances = 10;
